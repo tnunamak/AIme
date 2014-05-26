@@ -53,10 +53,18 @@ function bootstrap() {
     game.actors = [];
     game.teams = [];
     game.obstacles = [];
+    game.music =  new Howl({  urls: ['sounds/fishy.mp3'], loop: true});
 
     placeObstacles();
     createTeams(2, 1);
-    //var sound = new Howl({  urls: ['sounds/fishy.mp3'], autoplay: true, loop: true}).play();
+}
+
+function toggleMusic() {
+  if(game.music.pos() > 0) {
+    game.music.stop();
+  } else {
+    game.music.play();
+  }
 }
 
 function placeObstacles() {
