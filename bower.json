@@ -1,0 +1,22 @@
+{
+  "name": "aime",
+  "main": "aime.js",
+  "version": "0.0.0",
+  "authors": [
+    "Tim Nunamaker <tim@timnunamaker.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pixi": "~1.5.3",
+    "keydrown": "~1.1.0",
+    "underscore": "~1.6.0",
+    "howler": "~1.1.20"
+  }
+}
